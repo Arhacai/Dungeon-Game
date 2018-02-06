@@ -1,14 +1,7 @@
 import os
 import random
 
-# draw a grid
-# pick random location for player, monster and exit door
-# draw player in the grid
-# take input for movement
-# move player, unless invalid move (past edges of grid)
-# check for win/loss
-# clear screen and redraw the grid
-
+# Sets the number of rows and colums the dungeon will have.
 CELLS = []
 ROWS = 5
 COLUMNS = 5
