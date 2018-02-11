@@ -1,5 +1,8 @@
+import logging
 import os
 import random
+
+logging.basicConfig(filename='game.log', level=logging.DEBUG)
 
 # Sets the number of rows and colums the dungeon will have.
 CELLS = []
@@ -74,6 +77,10 @@ def draw_map(player):
 
 def game_loop():
 	player, monster, door = get_locations()
+
+	logging.info('monster: {}; door: {}; player: {}'.format(
+			monster, door, player))
+	
 	playing = True
 	
 	while playing:
